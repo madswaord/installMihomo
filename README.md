@@ -8,6 +8,13 @@
 mihomo_auto_update.sh
 ```
 
+## 适用环境
+
+- Linux
+- `systemd`
+- `root` 用户执行
+- 网络可访问 GitHub Releases
+
 ## 功能
 
 - 自动检测当前系统版本
@@ -18,6 +25,17 @@ mihomo_auto_update.sh
 - 卸载 `mihomo`
 - 自动选择最合适的官方发布包
 - 安装和升级过程按步骤显示
+
+## 快速开始
+
+直接拉取并运行：
+
+```bash
+git clone git@github.com:madswaord/installMihomo.git
+cd installMihomo
+chmod +x mihomo_auto_update.sh
+sudo bash mihomo_auto_update.sh
+```
 
 ## 默认安装位置
 
@@ -47,6 +65,16 @@ sudo bash mihomo_auto_update.sh install
 sudo bash mihomo_auto_update.sh upgrade
 sudo bash mihomo_auto_update.sh uninstall
 ```
+
+## 菜单首页显示
+
+进入脚本后会先自动显示：
+
+- 当前系统版本
+- `mihomo` 是否已安装
+- 当前 `mihomo` 版本
+- 当前二进制路径
+- 当前配置目录
 
 ## 安装说明
 
@@ -88,6 +116,18 @@ sudo bash mihomo_auto_update.sh uninstall
 - 删除二进制
 - 询问是否删除配置目录
 
+## 仓库结构
+
+```bash
+.
+├── mihomo_auto_update.sh
+├── README.md
+├── CHANGELOG.md
+├── CONTRIBUTING.md
+├── LICENSE
+└── .gitignore
+```
+
 ## 验证命令
 
 脚本语法检查：
@@ -111,3 +151,4 @@ journalctl -u mihomo -o cat -e
 ## 参考
 
 - mihomo systemd 官方文档：<https://wiki.metacubex.one/startup/service/>
+- mihomo Releases：<https://github.com/MetaCubeX/mihomo/releases>

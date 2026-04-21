@@ -1,0 +1,25 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Logs and temp files
+*.log
+*.tmp
+*.bak
+*.old
+
+# Shell history or local env files
+.env
+.env.*
+
+# Generated archives
+*.gz
+*.tar
+*.zip
